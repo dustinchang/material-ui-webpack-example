@@ -9,6 +9,7 @@ import {deepOrange500} from 'material-ui/styles/colors';
 import FlatButton from 'material-ui/FlatButton';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import AppBar from 'material-ui/AppBar';
 
 const styles = {
   container: {
@@ -74,6 +75,7 @@ class Main extends Component {
             secondary={true}
             onTouchTap={this.handleTouchTap}
           />
+          <AppBar title="My App yo~~~~~~~~~~~~~!!!!!!!!!!" onLeftIconButtonTouchTap={() => {alert('hello world!!!!!')}} />
         </div>
       </MuiThemeProvider>
     );
